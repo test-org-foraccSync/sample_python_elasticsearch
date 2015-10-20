@@ -8,4 +8,4 @@ script:
  - python sample.py
 notifications:
   email:
-    - exampleone@org.com
+    - varsha@shippable.com
