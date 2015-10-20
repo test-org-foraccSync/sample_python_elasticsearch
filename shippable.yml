@@ -4,8 +4,12 @@ python:
 services: 
  - elasticsearch
 install: pip install --use-mirrors -r requirements.txt
+before_script:
+ - mkdir -p shippable/testresults
+ - mkdir -p shippable/codecoverage
 script:
  - python sample.py
 notifications:
   email:
     - varsha@shippable.com
+archive: true
